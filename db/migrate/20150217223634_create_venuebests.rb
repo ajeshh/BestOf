@@ -5,6 +5,10 @@ class CreateVenuebests < ActiveRecord::Migration
       t.integer :best_id
 
       t.timestamps null: false
+
+      # The foreign keys for the associations are defined below
+  	  t.references :venue
+      t.references :best
     end
   end
 end

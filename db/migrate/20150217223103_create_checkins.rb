@@ -6,6 +6,10 @@ class CreateCheckins < ActiveRecord::Migration
       t.integer :venue_id
 
       t.timestamps null: false
+
+      # The foreign keys for the associations are defined below
+  	  t.references :user
+  	  t.references :venue
     end
   end
 end

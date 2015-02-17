@@ -5,6 +5,9 @@ class CreateItembests < ActiveRecord::Migration
       t.integer :best_id
 
       t.timestamps null: false
+      # The foreign keys for the associations are defined below
+      t.references :item
+      t.references :best
     end
   end
 end

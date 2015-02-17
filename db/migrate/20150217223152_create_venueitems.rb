@@ -5,6 +5,9 @@ class CreateVenueitems < ActiveRecord::Migration
       t.integer :item_id
 
       t.timestamps null: false
+      # The foreign keys for the associations are defined below
+  	  t.references :item
+  	  t.references :venue
     end
   end
 end
