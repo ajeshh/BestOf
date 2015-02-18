@@ -2,19 +2,23 @@
 <html>
 <head>
   <title>Bestof</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<% if current_user %>
-  Signed in as <%= current_user.name %>!
-  <%= link_to "Sign out", signout_path %>
-<% else %>
-  <%= link_to "Sign in with Foursquare", "/auth/foursquare" %>
-<% end %>
+	<div class="container">
+		<% if current_user %>
+		  Signed in as <%= current_user.name %>!
+		  <%= link_to "Sign out", signout_path %>
+		<% else %>
+		  <%= link_to "Sign in with Foursquare", "/auth/foursquare" %>
+		<% end %>
 
-this is 
+		this is 
 
+	</div>
 </body>
 </html>
