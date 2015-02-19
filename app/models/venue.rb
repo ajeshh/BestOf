@@ -4,5 +4,5 @@ class Venue < ActiveRecord::Base
 	has_many :venuebests
 	has_many :venues, :through => :checkins
 	has_many :items, :through => :venueitems
-	has_many :bests, :through => :userbest
+	has_many :bests, :through => :userbests
 end

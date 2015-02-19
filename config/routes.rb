@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   
   root to: 'sites#index'
 
+  get 'search', to: 'seach#show'
+
   get 'bests/show'
 
   get 'bests/new'

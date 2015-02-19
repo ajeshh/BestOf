@@ -1,4 +1,8 @@
 class SitesController < ApplicationController
-  def show
-  end
+
+	def login
+		render 
+	end
+
+
 end
